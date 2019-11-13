@@ -26,3 +26,5 @@ p MyModule.is_a? Module # true - 说明 MyModule 是 Module 的实例
 # 这是因为 MyModule.constants 是实例方法，Module.constants 是类方法，所以他们的作用不同
 
 # 你还可以在任何地方使用 Module.nesting 打印出当前作用域的层级结构
+#
+# 接下来请看，待续
