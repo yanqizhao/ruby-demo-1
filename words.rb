@@ -11,6 +11,8 @@ class ToWordsTest < Test::Unit::TestCase
   end
 end
 
+# 如何你运行测试成功了，接下来请查看 words_of_string.rb
+
 # 如果发现 RubyMine 右键运行出现 teamcity 字样
 # 可以尝试将 C:\Program Files\JetBrains\RubyMine 2019.1.2\rb\testing\patch\testunit\test\unit\autorunner.rb
 # 改名为 autorunner_x.rb，防止其运行

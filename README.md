@@ -1,11 +1,10 @@
+# Ruby 面向对象
+
 大部分例子来自于《Ruby 元编程》，部分例子有删改
 
 # 学习顺序
 
-1. [words.rb](./words.rb)
-2. [words_of_string.rb](./words_of_string.rb)
-3. [about_class.rb](./about_class.rb)
-4. 其他例子，跟着文章走即可
+打开 [words.rb](./words.rb) 跟着注释走即可，看完相当于学习了《Ruby 元编程》前 70 页的内容
 
 # 代码运行方式
 

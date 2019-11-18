@@ -1,15 +1,15 @@
-p '--String--'
-p String.superclass # Object
-p Object.superclass # BasicObject
-p BasicObject.superclass # nil
-p String.is_a? Class
-p '--Array--'
-p Array.superclass # Object
-p Array.is_a? Class
-p '--MyClass--'
-class MyClass; end
-p MyClass.superclass
-p MyClass.is_a? Class
+# p '--String--'
+# p String.superclass # Object
+# p Object.superclass # BasicObject
+# p BasicObject.superclass # nil
+# p String.is_a? Class
+# p '--Array--'
+# p Array.superclass # Object
+# p Array.is_a? Class
+# p '--MyClass--'
+# class MyClass; end
+# p MyClass.superclass
+# p MyClass.is_a? Class
 
 # 不用想，所有类都是 Class 类的实例，或者说所有类的构造者都是 Class
 # 但每个类的父类/超类各不相同

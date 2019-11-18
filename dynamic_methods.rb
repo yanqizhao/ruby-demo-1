@@ -7,6 +7,9 @@ class Notification
   def notify(which)
     send "notify_#{which}"
   end
+
+  private
+
   def notify_wechat
     p '通知到微信'
   end
@@ -15,6 +18,9 @@ class Notification
   end
   def notify_phone
     p '通知到手机'
+  end
+  def notify_dingding
+    p 'dingding'
   end
   def notify_all
     notify_wechat

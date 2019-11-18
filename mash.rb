@@ -21,6 +21,6 @@ def method_missing(method_name, *args, &blk)
   end
 end
 
-# 也就是说 map 的 :a 和 :a+ 方法都是在操作 data[:a]，一个读，一个写
+# 也就是说 map 的 :a 和 :a= 方法都是在操作 data[:a]，一个读，一个写
 # &blk 是什么？
 # 请看下节内容：代码块

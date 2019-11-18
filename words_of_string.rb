@@ -11,3 +11,5 @@ class ToWordsTest < Test::Unit::TestCase
     assert_equal '3 the Magic Number', '#3, the *Magic, Number*?'.to_words
   end
 end
+
+# 接下来请查看 about_class.rb

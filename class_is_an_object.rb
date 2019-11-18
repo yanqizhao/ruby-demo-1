@@ -14,6 +14,10 @@ p 'world'.is_a? String # true
 p String.is_a? Class # true，说明 String 是 Class 的实例
 p Array.is_a? Class # true，说明 Array 是 Class 的实例
 
+# 1 所有类都是Class的实例
+# 2 Class 也是类
+# => Class 是不是 Class 的实例
+
 # 注意，这里并没有说 String 和 Array 继承了 Class
 # 就像你不会说 'hello' 继承了 String
 # 你只会说一个类继承了另一个类，只不过所有类都是 Class 的实例

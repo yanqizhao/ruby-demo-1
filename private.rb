@@ -27,9 +27,8 @@ end
 
 obj = MyClass.new
 p obj.public_method
-p obj.private_method_1 # 找不到此方法
-p obj.public_call_private # 找不到此方法
-p obj.public_call_private_without_self # 找不到此方法
+p obj.public_send(:private_method_1)
+p obj.public_call_private_without_self
 
 # 结论
 # 私有方法的调用必须满足如下情况
