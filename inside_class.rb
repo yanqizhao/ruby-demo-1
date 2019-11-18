@@ -1,6 +1,11 @@
 class MyClass
+  def initialize
+    @v = 1
+  end
+
   def my_method
-    @v = 1 # 自动 return @v
+    @v += 1
+    # 自动 return @v
   end
 end
 
