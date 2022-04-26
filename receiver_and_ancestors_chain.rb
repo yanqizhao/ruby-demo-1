@@ -21,4 +21,8 @@ p obj.my_method # 括号可以省略
 p MySubClass.ancestors
 # Kernel 是一个模块，这说明祖先链除了类，还包含模块
 
+# 打印
+# "my_method()"
+# [MySubClass, MyClass, Object, Kernel, BasicObject]
+
 # 接下来看 include.rb

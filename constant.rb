@@ -27,5 +27,21 @@ p MyModule.is_a? Module # true - 说明 MyModule 是 Module 的实例
 # 这是因为 MyModule.constants 是实例方法，Module.constants 是类方法，所以他们的作用不同
 
 # 你还可以在任何地方使用 Module.nesting 打印出当前作用域的层级结构
+
+# 打印
+# "Module.nesting"
+# [MyModule::MyClass, MyModule]
+# "outer const"
+# "inner const"
+# "root const"
+# "outer const"
+# "inner const"
+# "root const"
+# "MyModule.constants \u65B9\u6CD5\u5F97\u5230 MyModule \u5185\u90E8\u7684\u6240\u6709\u4E00\u7EA7\u5E38\u91CF"
+# [:Const1, :MyClass]
+# "\u8981\u533A\u522B\u4E8E Module.constants\uFF0C\u5B83\u4F1A\u5F97\u5230\u6240\u6709\u9876\u5C42\u5E38\u91CF"
+# [:NotImplementedError, :NameError, :RbConfig, :NoMethodError]
+# true
+
 #
 # 接下来请看 receiver_and_ancestors_chain.rb

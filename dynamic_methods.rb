@@ -5,32 +5,39 @@
 
 class Notification
   def notify(which)
-    send "notify_#{which}"
+    send "notify_#{which}", "hi"
   end
 
   private
 
-  def notify_wechat
-    p '通知到微信'
+  def notify_wechat(msg)
+    p "通知到微信#{msg}"
   end
-  def notify_email
-    p '通知到邮件'
+  def notify_email(msg)
+    p "通知到邮件#{msg}"
   end
-  def notify_phone
-    p '通知到手机'
+  def notify_phone(msg)
+    p "通知到手机#{msg}"
   end
-  def notify_dingding
-    p 'dingding'
+  def notify_dingding(msg)
+    p "通知到dingding#{msg}"
   end
-  def notify_all
-    notify_wechat
-    notify_email
-    notify_phone
+  def notify_all(msg)
+    notify_wechat(msg)
+    notify_email(msg)
+    notify_phone(msg)
+    notify_dingding(msg)
   end
 end
 
 n = Notification.new
 n.notify('all')
+
+# 打印
+# "\u901A\u77E5\u5230\u5FAE\u4FE1hi"
+# "\u901A\u77E5\u5230\u90AE\u4EF6hi"
+# "\u901A\u77E5\u5230\u624B\u673Ahi"
+# "\u901A\u77E5\u5230dingdinghi"
 
 # 除了动态调用方法
 # 还可以动态定义方法

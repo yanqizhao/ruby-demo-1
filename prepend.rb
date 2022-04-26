@@ -17,4 +17,8 @@ p D2.ancestors
 d2 = D2.new
 p d2.my_method
 
+# 打印
+# [D2, M2, C2, Object, Kernel, BasicObject]
+# "M2#my_method()"
+
 # 知道了如何查找方法，接下来看看如何执行方法 execute_method.rb

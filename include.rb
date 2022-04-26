@@ -14,4 +14,7 @@ end
 
 p D1.ancestors # 出现 Kernel 是因为 Object include 了 Kernel，比如 print 就定义在 Kernel 里
 
+# 打印
+# [D1, C1, M1, Object, Kernel, BasicObject]
+
 # 接下来看 prepend.rb

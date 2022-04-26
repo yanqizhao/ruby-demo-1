@@ -1,15 +1,15 @@
-# p '--String--'
-# p String.superclass # Object
-# p Object.superclass # BasicObject
-# p BasicObject.superclass # nil
-# p String.is_a? Class
-# p '--Array--'
-# p Array.superclass # Object
-# p Array.is_a? Class
-# p '--MyClass--'
-# class MyClass; end
-# p MyClass.superclass
-# p MyClass.is_a? Class
+p '--String--'
+p String.superclass # Object
+p Object.superclass # BasicObject
+p BasicObject.superclass # nil
+p String.is_a? Class
+p '--Array--'
+p Array.superclass # Object
+p Array.is_a? Class
+p '--MyClass--'
+class MyClass; end
+p MyClass.superclass
+p MyClass.is_a? Class
 
 # 不用想，所有类都是 Class 类的实例，或者说所有类的构造者都是 Class
 # 但每个类的父类/超类各不相同
@@ -28,6 +28,25 @@ p Class.is_a? Class
 # 那么 Class 的父类是什么呢？
 p 'Class.superclass'
 p Class.superclass # Module
+p Module.superclass # Object
+
+# 打印
+# "--String--"
+# Object
+# BasicObject
+# nil
+# true
+# "--Array--"
+# Object
+# true
+# "--MyClass--"
+# Object
+# true
+# "Class.is_a? Class"
+# true
+# "Class.superclass"
+# Module
+# Object
 
 # Module 是什么，目前不知道，先不管
 #
